@@ -31,10 +31,18 @@ a {
 .one,
 .two {
   height: 80vh;
+  justify-content: center;
 }
+.one {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .three,
 .four {
   height: 100vh;
+  justify-content: flex-start;
+  padding: 10rem 5rem;
 }
 .one,
 .two,
@@ -42,14 +50,9 @@ a {
 .four {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   border: 1px solid red;
   align-items: flex-start;
-}
-
-[class*="-wrapper"] {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  box-sizing: border-box;
 }
 
 header {
