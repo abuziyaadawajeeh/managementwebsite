@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  font-family: "Be Vietnam";
+}
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100&family=Grenze+Gotisch:wght@500&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+body {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.middle {
+  display: grid;
+  margin: 0 10%;
+  border: 1px solid red;
+  grid-template-columns: 1fr 1fr;
+}
+
+.one,
+.two {
+  height: 80vh;
+}
+.three,
+.four {
+  height: 100vh;
+}
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid red;
+  align-items: flex-start;
+}
+
+[class*="-wrapper"] {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  grid-column: 1 / span 2;
+  height: 20vh;
+}
+.middle img {
+  width: 100%;
+}
+img {
+  vertical-align: bottom;
+  border: 1px solid red;
+}
+.menu > * {
+  margin: 1rem;
+}
+
+/* button  */
+.getstarted {
+  border: 0px;
+  background-color: var(--Bright-Red);
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  display: block;
+}
