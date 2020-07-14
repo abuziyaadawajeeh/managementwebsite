@@ -37,6 +37,17 @@ a {
   padding-left: 5rem;
   padding-right: 5rem;
 }
+.one > *,
+.three > *,
+.four > * {
+  margin-top: 2rem;
+}
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 3rem;
+}
 
 .three,
 .four {
